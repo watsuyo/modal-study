@@ -6,7 +6,9 @@
         <Backdrop @backdrop="backdrop" />
       </div>
     </template>
-    <button class="backdropButton" @click="backdrop">Backdrop</button>
+    <button class="backdropButton" @click="backdrop">
+      Backdrop
+    </button>
     <Footer />
   </div>
 </template>

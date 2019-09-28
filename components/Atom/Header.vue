@@ -1,5 +1,7 @@
 <template>
-  <button class="header">Header!!</button>
+  <button class="header">
+    Header!!
+  </button>
 </template>
 
 <script lang="ts">

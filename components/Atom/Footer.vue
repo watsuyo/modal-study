@@ -1,5 +1,7 @@
 <template>
-  <button class="footer">Footer!!</button>
+  <button class="footer">
+    Footer!!
+  </button>
 </template>
 
 <script lang="ts">

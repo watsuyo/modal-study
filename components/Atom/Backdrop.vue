@@ -1,15 +1,17 @@
 <template>
-  <div class="backdrop" @touchstart="touchstart" @touchend="touchend"></div>
+  <div class="backdrop" @touchstart="touchstart" @touchend="touchend" />
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  data: {
-    startYposition: 0,
-    startXposition: 0,
-    endYPosition: 0,
-    endXPosition: 0
+  data() {
+    return {
+      startYposition: 0,
+      startXposition: 0,
+      endYPosition: 0,
+      endXPosition: 0
+    }
   },
   methods: {
     touchstart(event) {
