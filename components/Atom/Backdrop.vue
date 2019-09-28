@@ -1,5 +1,5 @@
 <template>
-  <div class="modal" @touchstart="touchstart" @touchend="touchend"></div>
+  <div class="backdrop" @touchstart="touchstart" @touchend="touchend"></div>
 </template>
 
 <script lang="ts">
@@ -19,10 +19,10 @@ export default Vue.extend({
     touchend(event) {
       this.endYposition = event.changedTouches[0].clientY
       this.endXposition = event.changedTouches[0].clientX
-      this.endYposition - this.startYposition > 100 && this.closeModal()
+      this.endYposition - this.startYposition > 100 && this.closeBackdrop()
     },
-    closeModal() {
-      this.$emit('modal')
+    closeBackdrop() {
+      this.$emit('backdrop')
     },
     stopEvent() {
       event.stopPropagation()
@@ -32,7 +32,7 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.modal {
+.backdrop {
   position: fixed;
   z-index: 2;
   width: 100%;
